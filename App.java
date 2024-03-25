@@ -1,4 +1,4 @@
-package com.springcore2;
+package com.springcore1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,11 +11,14 @@ public class App
 {
     public static void main( String[] args )
     {
-    ApplicationContext context	= new ClassPathXmlApplicationContext("com/springcore2/web.xm1");
-    Emp e = (Emp)context.getBean("emp");
-    System.out.println(e.getName());
-    System.out.println(e.getPhno());
-    System.out.println(e.getAdd());
-    System.out.println(e.getCourse());
-     }
+        System.out.println( "Hello World!" );
+     ApplicationContext context = new ClassPathXmlApplicationContext("web1.xml");
+     Student std1 = (Student)context.getBean("student1");
+     Student std2 = (Student)context.getBean("student2");
+		System.out.println(std1);
+		System.out.println(std2);
+
+     
+        
+    }
 }
