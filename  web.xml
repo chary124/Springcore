@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+ 
+        <bean name="emp" class="com.Springcore2.Emp">
+        
+        <property name="name" value="mahesh"/>
+        
+        <property name="phno">
+        <list>
+        <value>2221</value>
+        <value>2245</value>
+         <value>2291</value>
+          <value>2212</value>
+         <value>2298</value>
+        
+        </list>
+        
+        </property>
+        <property name="add">
+        <set>
+        <value>hyderabad</value>
+        <value>secunderabd</value>
+         <value>warangal</value>
+         <value>Goa</value>
+           <value>chennai</value>
+        
+        </set>
+        </property>
+        <property name="course">
+        <map>
+        <entry key="java" value="2months"/>
+        <entry key="javaadvance" value="2months"/>
+        <entry key="spring" value="4months"/>
+        <entry key="jdbc" value="6months"/>
+        <entry key="collectionframework" value="7months"/>
+        
+        </map>
+        </property>
+        
+        </bean>
+        </beans>
